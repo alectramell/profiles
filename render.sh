@@ -10,7 +10,7 @@ git push origin master
 
 clear
 
-echo -n "DONE!"
+echo -n "PROFILES UPLOADED!"
 
 read -s -n1
 
