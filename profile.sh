@@ -6,7 +6,11 @@ source <(curl -s https://raw.githubusercontent.com/alectramell/beacons/master/co
 
 clear
 
-if [ -e https://raw.githubusercontent.com/alectramell/profiles/master/$1.txt ]
+url="https://raw.githubusercontent.com/alectramell/profiles/master/$1.txt"
+
+clear
+
+if [ curl -f ${url} >/dev/null 2>&1 ]
 then
 	PROFILE=($(curl -s https://raw.githubusercontent.com/alectramell/profiles/master/$1.txt))
 	clear
