@@ -15,6 +15,7 @@ YOB=$(showhex "${PROFILE[1]}")
 GEN=$(showhex "${PROFILE[2]}")
 LVL=$(showhex "${PROFILE[3]}")
 STATUS=$(showhex "${PROFILE[4]}")
+PHONE=$(showhex "${PROFILE[5]}")
 
 clear
 
@@ -57,6 +58,8 @@ then
 else
 	echo ""${purple}$STATUS${reset}""
 fi
+echo -n "${green}PHONE:${reset} "
+echo "${white}$PHONE${reset}"
 echo -e "\n" | pg
 
 clear
